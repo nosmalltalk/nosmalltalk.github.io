@@ -1,5 +1,7 @@
 const questions = [
-    // Insert your array of questions here
+    "How do you like to make others happy?"
+    "What would you do with 1 Million € in cash right now?"
+    "Three Books you would read for the rest of your life?"
 ];
 
 const questionText = document.getElementById('question-text');
