@@ -1,63 +1,125 @@
 body {
-    background-color: #000;
-    color: #f5f5f5;
-    font-family: monospace;
-    margin: 0;
-    padding: 0;
+  background-color: #D6FFC7;
+  color: black;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 70px;
+  line-height: 1.8;
 }
 
-header {
-    padding: 2rem;
-    text-align: center;
-}
-
-h1 {
-    font-size: 2rem;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+#language-container {
+  background-color: #D6FFC7;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin-left: 0px;
+  font-style: italic;
+  /* padding: 1rem; */
+  }
 
 #question-container {
-    text-align: center;
-    margin-bottom: 2rem;
+background-color: #1B3B3A ;
+color: white;
+/* font-weight: bold; */
+font-size : calc(2.0*(0.75vh + 0.8vw)) ;
+/* padding: 2rem; */
+text-align: center;
+margin-left: 0px;
+display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 45vh
 }
 
-#question-text {
-    font-size: 1.5rem;
-    color: #000;
+#refresh-btn {
+  background-color: #1B3B3A ;
+  color: white ;
+  margin-left: 0px;
+  padding: 10px 20px ;
+  font-size: 1em ;
+  font-weight: bold;
+  cursor: pointer ;
+  border:none;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-#get-question-btn {
-    background-color: #f5f5f5;
-    color: #000;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    cursor: pointer;
-    outline: none;
-}
+/* .arrow {
+  font-size: 2em;
+  margin-top: 20px;
+  text-align: center;
+} */
 
-#about-container {
-    text-align: center;
-    margin-top: 2rem;
-}
+ #about-container {
+   background-color: #D6FFC7;
+/* padding: 1rem; Add padding */
+} 
 
-h2 {
-    font-size: 1.5rem;
+#legal-container {
+  background-color: #D6FFC7;
+  }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #D6FFC7;
+  margin-left: 0px;
+  color: black;
+  font-weight: bold;
+  /* padding: 1rem; */
+  text-align: center;
+  height: 95px;
+  /* margin-bottom: 2rem; /* Add margin */
 }
 
 footer {
-    padding: 1rem;
-    text-align: center;
-    background-color: #f5f5f5;
-    color: #000;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #D6FFC7;
+  margin-left: 0px;
+  color: black;
+  font-style: italic;
+  /* padding: 1rem; */
+  text-align: center;
+  height: 60px
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+p {
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+hr {
+  border: none;
+  border-top: 3px solid #1B3B3A;
+  height: 1px;
+  margin: 0;
+}
+
+a {
+  color: black; /* This sets the color of unvisited links */
+}
+
+a:visited {
+  color: black; /* This sets the color of visited links */
+}
+
+a:hover {
+  color: black; /* This sets the color of links when the mouse is over them */
+}
+
+a:active {
+  color: black; /* This sets the color of links when they are clicked */
+}
+
+
