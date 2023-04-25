@@ -1,16 +1,163 @@
-const questions = [
-    "How do you like to make others happy?",
-    "What would you do with 1 million € in cash right now?",
-    "Three Books you would read for the rest of your life?",
-    "If you live in a world, where every decision you make, creates a new parallel universe: Which parallel universes would you want to travel the most?",
-    "Imagine that between Life and Death you visit the place you have felt the most fulfilled and safed and talked to the person that has helped you grow the most in your childhood: What place would you be in and what person would you meet?",
-];
+const questions = [ 
+  "What are some of your different identities?",
+  "What is a ritual you have that you would not want to do without?",
+  "What historical event would you want to have witnessed?",
+  "What disadvantages would your personal life have if we shifted from a money-based system to a nature-based system?",
+  "What are the limits of your personal freedom?",
+  "How do you confront contradictions?",
+  "Does your individual happiness matter more than the collective happiness of the people around you?",
+  "How much responsibility do you take for your decisions? Is it the same for all your decisions?",
+  "Why do people enjoy looking at each other?",
+  "What does it take for people to remember specific things?",
+  "Where do you come from and where do you want to go?",
+  "What do you enjoy spending money on?",
+  "What do people need art for?",
+  "What does 'having fun' mean to you?",
+  "Would you prefer the people around you to be mainly friendly or mainly intelligent?",
+  "Would you like to live in a world of radical honesty",
+  "What challenge would you like to face the most?",
+  "What makes you happy?",
+  "How do you like to procrastinate the most?",
+  "What would you do with 10.000€ before it became worthless?",
+  "What would you like to be paid with instead of money?",
+  "Would you like to be famous? In what way?",
+  "Before making a phone call, do you ever rehearse what you are going to say? Why?",
+  "What would constitute a perfect day for you?",
+  "Do you have a secret hunch about how you will die?",
+  "If you could change anything about the way you were raised, what would it be?",
+  "If you could wake up tomorrow having gained any one quality or ability, what would it be?",
+  "If you could ask one question about your future and get an answer, what would the question be?",
+  "What is the greatest accomplishment in your life?",
+  "What do you value most in a friendship",
+  "What is your most treasured memory?",
+  "What is your most terrible memory?",
+  "If you knew that you died in a year, would you change your way of living?",
+  "Fill in the blank: I wish I had someone with whom I could share ___.",
+  "When did you last cry in front of another person? By yourself?",
+  "What, if anything, is too serious to be joked about?",
+  "If you were to die this evening with no opportunity to communicate with anyone, what would you most regret not having told someone? Why have you not told them yet?",
+  "Your house/room, containing everything you own, catches fire. After saving your family and pets you can save one more item from the flames? What would it be?",
+  "Which song makes you immediately want to dance?",
+  "What always makes you laugh?",
+  "What is the best book you have ever read and why?",
+  "What is the best movie you have ever watched and why?",
+  "What is your favourite place in your city?",
+  "What was the most spontaneous thing you have ever done?",
+  "Which three things get you immediately in a bad mood?",
+  "What was your most exciting vacation?",
+  "What is your most favourite quote?",
+  "Who do you envy the most and why?",
+  "What was the most helpful life lesson you have recently learned?",
+  "What are you thinking of first, when thinking of your family?",
+  "Is there something you very strongly believe in?",
+  "What is one thing you are grateful for today?",
+  "What is one thing you are currently excited about?",
+  "What is one virtue you want to exhibit tomorrow?",
+  "What is one thing you are avoiding?",
+  "What were your biggest wins of the day?",
+  "Did you have any major realizations today?",
+  "What is the biggest bottleneck to achieving your next goal? Why are you not working on that today?",
+  "If you repeated every action you took today, for a year, where would you end up? Is this the place you want to be?",
+  "How do you like to make others happy?",
+  "What would you do with 1 million € in cash right now?",
+  "Three Books you would read for the rest of your life?",
+  "If you live in a world, where every decision you make, creates a new parallel universe: Which parallel universes would you want to travel the most?",
+  "Imagine that between Life and Death you visit the place you have felt the most fulfilled and the safest and talked to the person that has helped you grow the most in your childhood: What place would you be in and what person would you meet?",
+  "What food do you have the strongest emotional attachment to? Why?",
+  "What was your favourite concert you have been to?",
+  "If you could try out any job for one day, what would it be?",
+  "If all jobs were paid the same and required the same time commitment. What would you do?",
+  "How would you change your life if you received 1.000€/month without any conditions?",
+  "What is the hardest lesson you have learned in love?",
+  "Which one of your parent's personality traits do you want to keep/let go?",
+  "Is there a feeling you miss?",
+  "What stereotypes do you think have been made about you?",
+  "What question are you trying to answer most in your life right now?",
+  "What do you want to stop apologizing for?",
+  "What is the best thing you have done for your mental health recently?",
+  "What would your younger self not believe about your life today?",
+  "What are you overthinking right now?",
+  "Is there anyone who has changed your life but does not know it?",
+  "Which of your mistakes taught you the most this past year?",
+  "What is the most unexplainable thing that has happened to you?",
+  "When was the last time a decision you made completely changed your life? Why did you take that decision?",
+  "What would you want the title of your autobiography to be?",
+  "What title would you give this chapter of your life?",
+  "What lesson took you the longest to unlearn?",
+  "What lessons about friendship have you learned?",
+  "What is something you once thought to be a waste of time but now deem really valuable?",
+  "Would you rather gain immunity against mental or physical illness?",
+  "When you were a kid, what scared you about growing up?",
+  "What is an underappreciated adulthood milestone?",
+  "What is the most fulfilling part of your current job?",
+  "What sideproject would you like to follow up on if you had more time or resources?",
+  "What is a skill you would love to learn?",
+  "What questions do you get asked way too often?",
+  "When you where a kid, what did the grown-ups in your life not understand about you?",
+  "If an actor/actress had to play you in a movie, what would they find most difficult about the role?",
+  "What role did you play in your family when you were growing up?",
+  "What is something in your culture that you find difficult to connect with?",
+  "What is your favourite sound?",
+  "What is your favourite smell?",
+  "What flaws do you find easier to accept: yours or your friends/partner?",
+  "Do you feel like you always have a choice?",
+  "Can a person change simply by deciding to?",
+  "In our society, who should be paid more and who should be paid less?",
+  "What do all of your friends have in common?",
+  "What does 'acting your age' mean to you and do you feel like you 'act your age'?",
+  "What is something from your generation the next generation would find hard to understand?",
+  "What is something the generation before finds hard to understand about your generation?",
+  "What is something you do or believe that some people might consider selfish?",
+  "What is something that you hope for that you fear might never happen?",
+  "Under what circumstances do you enjoy change?",
+  "What animal would you want to be for a day?",
+  "What does the voice inside your head sound like?",
+  "Think back to who you were ten years ago. In what ways does your younger self make you cringe?",
+  "Fill in the blank: I feel like I am the only one who does not find ___ funny.",
+  "In what ways have people judged you before getting to know you?",
+  "What is one insecurity that has, for better or for worse, shaped who you are today?",
+  "What would be your role in a world without electricity?",
+  "How would you change the way you live if you know the date of your death?",
+  "What is one issue you wish the news gave more attention to?",
+  "What thoughts are currently keeping you up at night?",
+  "What do all your ambitions, hobbies, and interests have in common?",
+  "What is one piece of advice that is not as helpful as people think it is?",
+  "Fill in the blank: If ___ never happened, I would be in a much better place right now",
+  "What do you tend to do when you are overwhelmed by your emotions?",
+  "If you could invite any five people to a dinner party. Who would it be and why?",
+  "What must a place have for you to consider it home?",
+  "What are common stereotypes about your culture and which ones actually apply to you?",
+  "If your life were a video game, who would be your final boss?",
+  "What is a dream you were glad you gave up on?",
+  "What is something you did yesterday that made you feel good today?",
+  "What is something you can do today that will make you feel good tomorrow?",
+  "What extinct animal would you have wanted to see the most?",
+  ];
+  
+function getRandomQuestions(num) {
+  let randomQuestions = [];
+  for (let i = 0; i < num; i++) {
+    let randomIndex = Math.floor(Math.random() * questions.length);
+    randomQuestions.push(questions[randomIndex]);
+  }
+  return randomQuestions;
+}
 
-const questionText = document.getElementById('question-text');
-const getQuestionBtn = document.getElementById('get-question-btn');
+function displayQuestions() {
+  const questionContainer = document.getElementById("question-container");
+  const randomQuestions = getRandomQuestions(1);
+  questionContainer.innerHTML = "";
+  randomQuestions.forEach(function(question) {
+    const questionElement = document.createElement("p");
+    questionElement.textContent = question;
+    questionContainer.appendChild(questionElement);
+  });
+}
 
-getQuestionBtn.addEventListener('click', () => {
-    const randomIndex = Math.floor(Math.random() * questions.length);
-    questionText.textContent = questions[randomIndex];
+window.addEventListener("load", function() {
+  displayQuestions();
 });
 
+document.getElementById('refresh-btn').addEventListener('click', function() {
+    location.reload();
+});
